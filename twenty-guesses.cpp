@@ -5,37 +5,42 @@
 // Description: Guess numbers.
 
 #include <iostream>
+#include <string>
 
 using namespace std;
 
 // Functions go here. Not sure what those are yet.
 void greetUser (string &name);
+//nextGuess goes here
+// reportResult goes here
 
 int main () {
     string userName;
-    
-    // Greet player and get the player's name
+
+    // Greet user and get the user's name
     greetUser (userName);
-    
-    const int MAX_GUESS = 17;
+
+    const int MAX_GUESSES = 17;
     const int RANGE_LOW =1;
     const int RANGE_HIGH = 131072;
 
+    cout << userName << ", think of a number between " << RANGE_LOW << " and "
+         << RANGE_HIGH << ". I have " << MAX_GUESSES << " guesses to find it\n";
+
+    int low = RANGE_LOW, high = RANGE_HIGH;
+    bool guessed = false;
+
+    // Set up the loop
+    // Set up the switch
+
+
     
-    
-
-    // Max Number of guesses
-    cout << "Hi there pick a number between 0 and 131072" << endl;
-    cout << "Respond with L for lower, H for higher and S for same" << endl;
-
-    //My variables
-    int guessNumber;
-    int response;
-
-    cout << "\nIs your number " << guessNumber << "[L|H|S]?" << endl;
-
-    cin >> response  ;
-    cout << "you said it was " << response;
 
     return 0;
 }
+
+// Add the functions here
+// Add a greet function
+// This is the next guess based on the range we set
+// This reports the results of the game
+
