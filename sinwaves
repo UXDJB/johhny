@@ -1,0 +1,12 @@
+#include<iostream>
+
+using namespace std;
+
+int main (){
+
+//math for sine wave goes here
+
+//sine wave output here
+
+return 0;
+}
